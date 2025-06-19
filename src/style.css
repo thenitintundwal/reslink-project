@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+.gradient-bg-right {
+  background: linear-gradient(to right, #0f0f0f, #16342d);
+}
+.gradient-bg-left {
+  background: linear-gradient(to left, #0f0f0f, #16342d);
+}
+
+@layer utilities {
+  .wire-wrapper {
+    @apply relative bg-transparent rounded-2xl overflow-hidden;
+  }
+
+  .wire-wrapper::before {
+    background: conic-gradient(
+      rgba(255, 255, 255, 0.84) 0% 5%,
+      transparent 5% 100%
+    );
+
+    position: absolute;
+    height: 600%;
+    width: 200%;
+    top: -250%;
+    left: -50%;
+    content: "";
+    animation: spin-reverse 7s linear infinite;
+  }
+
+  .wire {
+    @apply absolute bg-black rounded-2xl;
+  }
+}
+
+@keyframes spin-reverse {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.profile:hover {
+  box-shadow: 0 0 24px 8px rgba(255, 255, 255, 0.7),
+    0 0 16px 4px rgba(0, 255, 128, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+.lucide:hover {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.7))
+    drop-shadow(0 0 4px rgba(0, 255, 128, 0.5));
+  transition: filter 0.3s ease;
+}
+
+.lucide {
+  cursor: pointer;
+}
+
+.profile {
+  cursor: pointer;
+}
+
+.wire-wrapper.wire-fast-glow::before {
+  animation-duration: 2s !important;
+  background: conic-gradient(
+    rgba(255, 255, 255, 1) 0% 10%,
+    rgba(0, 255, 128, 0.7) 10% 20%,
+    transparent 20% 100%
+  );
+  box-shadow: 0 0 32px 16px rgba(255, 255, 255, 0.8),
+    0 0 24px 8px rgba(0, 255, 128, 0.5);
+}
