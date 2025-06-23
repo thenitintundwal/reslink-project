@@ -74,7 +74,7 @@
       class="h-screen w-screen flex justify-center items-center overflow-hidden bg-black relative"
     >
       <div
-        class="h-screen w-full md:w-[28%] text-white absolute top-0 bottom-0 z-10"
+        class="h-screen w-full lg:w-[28%] text-white absolute top-0 bottom-0 z-10"
       >
         <div class="flex justify-between mt-8 px-2 items-center mx-2">
           <div class="">
@@ -86,7 +86,9 @@
           </div>
         </div>
         <div class="info md:flex flex-row mt-10 mx-4">
-          <div class="gradient-bg-left w-[50%] p-2 rounded-l-xl">
+          <div
+            class="gradient-bg-left w-full lg:w-[50%] p-2 lg:rounded-l-xl flex flex-col justify-center items-center lg:justify-end"
+          >
             <div class="blur-2xl"></div>
             <p>Solar Generation</p>
             <div
@@ -118,8 +120,10 @@
             </div>
           </div>
           <!-- <br class="text-gray-600 h-1 w-1" /> -->
-          <div class="gradient-bg-right w-[50%] p-2 rounded-r-xl">
-            <p class="flex justify-center md:justify-end">Grid export</p>
+          <div
+            class="gradient-bg-right w-full lg:w-[50%] p-2 rounded-r-xl flex flex-col justify-center items-center lg:justify-end mt-3 lg:mt-0"
+          >
+            <p class=" ">Grid export</p>
             <div
               class="flex gap-2 items-center justify-center md:justify-end pt-2"
             >
@@ -148,7 +152,7 @@
           </div>
         </div>
         <!-- model -->
-        <div class="flex justify-center items-center mt-7">
+        <div class="flex justify-center items-center mt-12 lg:mt-7">
           <img
             src="./public/last draft reslink'.png"
             alt=""
@@ -159,10 +163,10 @@
         </div>
         <!-- after 3d model div -->
         <div
-          class="flex text-white items-center justify-between mt-5 px-4 absolute w-full top-[60%]"
+          class="lg:flex text-white items-center justify-between mt-5 px-4 absolute w-full top-[60%]"
         >
           <div
-            class="w-[48%] bg-[#18181B] rounded-2xl flex justify-start items-center gap-5 p-2"
+            class="w-full lg:w-[48%] bg-[#18181B] rounded-2xl flex justify-center lg:justify-start items-center gap-5 p-2 py-4 lg:py-2 px-3"
           >
             <div>
               <div class="bg-green-950 rounded-2xl p-2">
@@ -184,13 +188,13 @@
                 </svg>
               </div>
             </div>
-            <div>
+            <div class="flex lg:flex-col gap-6 lg:gap-0">
               <p>Load</p>
               <h1>30.59 <span>kw</span></h1>
             </div>
           </div>
           <div
-            class="w-[48%] bg-[#18181B] rounded-2xl flex justify-end items-center gap-5 p-2"
+            class="w-full lg:w-[48%] bg-[#18181B] rounded-2xl flex justify-center lg:justify-end items-center gap-5 p-2 mt-3 lg:mt-0 py-4 lg:py-2 px-3"
           >
             <div>
               <div class="bg-green-950 rounded-2xl p-2">
@@ -211,7 +215,7 @@
                 </svg>
               </div>
             </div>
-            <div>
+            <div class="flex lg:flex-col gap-6 lg:gap-0">
               <p>Battery</p>
               <h1>51.6 <span>kw</span></h1>
             </div>
@@ -219,7 +223,7 @@
         </div>
         <!--Top wire paasing energy -->
         <div
-          class="absolute top-[22%] left-[20%] rotate-180 rounded-2xl bg-gray-700 -z-10"
+          class="absolute top-[29%] lg:top-[22%] left-[20%] rotate-180 rounded-2xl bg-gray-700 -z-10"
         >
           <div
             class="wire-wrapper h-[120px] w-[245px] flex justify-center items-center rounded-2xl"
@@ -229,7 +233,7 @@
         </div>
         <!--bottom wire paasing energy -->
         <div
-          class="absolute top-[50%] left-[20%] rounded-2xl bg-gray-700 -z-10 skew-y-[-10deg]"
+          class="absolute top-[52%] lg:top-[50%] left-[20%] rounded-2xl bg-gray-700 -z-10 skew-y-[-10deg]"
         >
           <div
             class="wire-wrapper h-[120px] w-[265px] flex justify-center items-center rounded-2xl"
@@ -239,7 +243,7 @@
         </div>
         <!-- solar panal -->
         <div
-          class="absolute w-full bottom-18 bg-[#18181B] rounded-2xl mt-5 px-4 flex justify-between items-center"
+          class="absolute left-1 lg:left-0 w-[98%] bottom-18 bg-[#18181B] rounded-2xl mt-5 px-4 flex justify-between items-center"
         >
           <div class="solarText">
             <h1>Solar Panel</h1>
